@@ -13,8 +13,7 @@
     "build": "npm run clean && tsc",
     "lint:fix": "eslint . --ext .ts --fix",
     "test": "echo \"Error: no test specified\"",
-    "prepare": "husky install",
-    "precommit": "lint-stagde"
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
