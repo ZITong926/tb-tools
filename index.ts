@@ -20,4 +20,4 @@ console.log(colors('cyan', '淘宝链接: ') + '%s', value.tbUrl)
 console.log(colors('cyan', '淘宝本地启动: ') + '%s', value.tbLocal)
 QRCode.generate(value.tbUrl, { small: true }, function (qrcode: any) {
   console.log(colors('cyan', '淘宝二维码: ') + '\n%s', qrcode)
-})
+});
