@@ -1094,7 +1094,7 @@
   dependencies:
     "fast-diff" "^1.1.2"
 
-"prettier@>=2.0.0":
+"prettier@>=2.0.0", "prettier@2.6.0":
   "integrity" "sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A=="
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.6.0.tgz"
   "version" "2.6.0"
