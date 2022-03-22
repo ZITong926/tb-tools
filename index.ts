@@ -1,11 +1,9 @@
 #!/usr/bin/env node
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 const lodash = require('lodash')
-const pkg = require('../package.json')
 const colors = require('colors-console')
 const QRCode = require('qrcode-terminal')
 const { program } = require('commander')
+const pkg = require('../package.json')
 const { createTbUrl } = require('./utils/createTbUrl')
 
 program.option('-a, --apUrl <value>', '需要解析的支付宝地址')
@@ -16,8 +14,8 @@ program.version(pkg.version, '-v, --version').parseOptions(process.argv)
 const options = program.opts()
 const { apUrl, tbUrl, ...rest } = options
 const value = createTbUrl(apUrl, tbUrl, lodash.pickBy(rest, Boolean))
-console.log(colors('cyan', '淘宝链接: ') + '%s', value.tbUrl)
-console.log(colors('cyan', '淘宝本地启动: ') + '%s', value.tbLocal)
-QRCode.generate(value.tbUrl, { small: true }, function (qrcode: any) {
-  console.log(colors('cyan', '淘宝二维码: ') + '\n%s', qrcode)
+console.log(`${colors('cyan', '淘宝链接: ')}%s`, value.tbUrl)
+console.log(`${colors('cyan', '淘宝本地启动: ')}%s`, value.tbLocal)
+QRCode.generate(value.tbUrl, { small: true }, (qrcode: any) => {
+  console.log(`${colors('cyan', '淘宝二维码: ')}\n%s`, qrcode)
 })

@@ -4,13 +4,18 @@
   "plugins": ["@typescript-eslint", "prettier"],
   "extends": [
     "airbnb",
-    "prettier",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "no-console": 0,
     "semi": [2, "never"],
     "prettier/prettier": 2,
-    "@typescript-eslint/no-var-requires": 0
+    "import/extensions": 0,
+    "operator-linebreak": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-explicit-any": 0
   }
 }
