@@ -8,3 +8,5 @@
 ```bash
 npm i tb-tools --save
 ```
+## eslint-config-prettier
+--eslint-config-prettier Turns off all rules that are unnecessary or might conflict with Prettier.
