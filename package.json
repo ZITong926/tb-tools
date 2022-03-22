@@ -22,7 +22,9 @@
     }
   },
   "lint-staged": {
-    "*.ts": "npm run lint"
+    "*.{ts, tsx, json}": [
+      "npm run lint:fix"
+    ] 
   },
   "author": "zitong.cc",
   "license": "ISC",
