@@ -23,8 +23,7 @@
   },
   "lint-staged": {
     "*.{ts, tsx, json}": [
-      "npm run lint:fix",
-      "git add"
+      "npm run lint:fix"
     ] 
   },
   "author": "zitong.cc",
